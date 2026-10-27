@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the paper and this repository."
 title: "cld-corrected-sampler: code and verification for 'When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow'"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-27
 license: MIT
 doi: "10.5281/zenodo.23689208"
