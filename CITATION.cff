@@ -18,3 +18,15 @@ keywords:
   - reverse-time SDE
   - probability-flow ODE
   - score-based generative models
+preferred-citation:
+  type: article
+  title: "When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow"
+  authors:
+    - family-names: "Namba"
+      given-names: "Taishi"
+      orcid: "https://orcid.org/0009-0002-7098-970X"
+  year: 2026
+  doi: "10.5281/zenodo.23689913"
+  publisher:
+    name: "Zenodo"
+  notes: "Preprint"

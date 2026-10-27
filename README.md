@@ -4,6 +4,8 @@
 
 Code, stored results, trained networks and verification scripts for the paper by Taishi Namba (2026).
 
+**Paper:** T. Namba, *When the blur is slower than the flow: clipped and corrected samplers on the critically damped Langevin flow*, preprint, Zenodo (2026), [doi:10.5281/zenodo.23689913](https://doi.org/10.5281/zenodo.23689913).
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23689208.svg)](https://doi.org/10.5281/zenodo.23689208)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/neginyan/cld-corrected-sampler/blob/main/demo/cld_corrected_sampler_demo.ipynb)
 [![verify](https://github.com/neginyan/cld-corrected-sampler/actions/workflows/verify.yml/badge.svg)](https://github.com/neginyan/cld-corrected-sampler/actions/workflows/verify.yml)
@@ -83,7 +85,7 @@ The study was carried out with AI assistants: Anthropic Claude (planning, comput
 
 ## Citation
 
-Please cite the paper and this repository; see `CITATION.cff`.
+Please cite the paper ([doi:10.5281/zenodo.23689913](https://doi.org/10.5281/zenodo.23689913)) and this repository; see `CITATION.cff`.
 The code is archived at Zenodo: [doi:10.5281/zenodo.23689208](https://doi.org/10.5281/zenodo.23689208) (all versions; v1.0.0 is [10.5281/zenodo.23689209](https://doi.org/10.5281/zenodo.23689209)).
 
 ## License
