@@ -1,0 +1,42 @@
+smin min L_pos -0.24048972357207193 at (np.int64(12), np.int64(0))
+vstd min L_pos -0.07682991405333356 at (np.int64(0), np.int64(0))
+smax min L_pos -0.0267975259117299 at (np.int64(5), np.int64(0))
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+M min L_pos -0.21009062159498723 at (np.int64(0), np.int64(0))
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+M_smin0.5 min L_pos -0.29179502422845727 at (np.int64(15), np.int64(2))
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+b2theory.py:27: RuntimeWarning: divide by zero encountered in scalar divide
+  self.T = np.log(smax / smin) / self.r
+b2theory.py:30: RuntimeWarning: invalid value encountered in scalar multiply
+  def sig2(self, t): return (self.smin * np.exp(self.r * t))**2
+b2theory.py:32: RuntimeWarning: invalid value encountered in multiply
+  m = expm(self.b * t); return m @ self.S0 @ m.T + self.sig2(t) * np.eye(2)
+M_vstd0.3 min L_pos -0.09370384702344242 at (np.int64(16), np.int64(5))

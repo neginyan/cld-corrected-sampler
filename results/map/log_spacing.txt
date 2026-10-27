@@ -1,0 +1,13 @@
+{'radius_factor': 1.0, 'seed': 0, 'theory_log_within': -0.015434213350950755, 'coarse': -0.014562233866742014, 'fine': -0.01446497145764492, 'extrap': -0.014367709048547827, 'ratio_to_theory': 0.9308999896429946}
+{'radius_factor': 2.0, 'seed': 0, 'theory_log_within': -0.015434213350950755, 'coarse': -0.017400363344702005, 'fine': -0.016297527323758918, 'extrap': -0.015194691302815831, 'ratio_to_theory': 0.9844810977606339}
+{'radius_factor': 8.0, 'seed': 0, 'theory_log_within': -0.015434213350950755, 'coarse': -0.016816744558624863, 'fine': -0.01588186268414739, 'extrap': -0.01494698080966992, 'ratio_to_theory': 0.9684316569816743}
+{'radius_factor': 4.0, 'seed': 0, 'theory_log_within': -0.015434213350950755, 'coarse': -0.017043665725973184, 'fine': -0.01643423078886078, 'extrap': -0.015824795851748376, 'ratio_to_theory': 1.0253062784552969}
+{'radius_factor': 1.0, 'seed': 1, 'theory_log_within': -0.015434213350950755, 'coarse': -0.013428678988828593, 'fine': -0.012233957697479729, 'extrap': -0.011039236406130864, 'ratio_to_theory': 0.715244512636651}
+{'radius_factor': 2.0, 'seed': 1, 'theory_log_within': -0.015434213350950755, 'coarse': -0.014711477872518579, 'fine': -0.013793500495452343, 'extrap': -0.012875523118386106, 'ratio_to_theory': 0.8342195890141021}
+{'radius_factor': 4.0, 'seed': 1, 'theory_log_within': -0.015434213350950755, 'coarse': -0.017275902930487932, 'fine': -0.016114054731552824, 'extrap': -0.014952206532617716, 'ratio_to_theory': 0.9687702374346571}
+{'radius_factor': 8.0, 'seed': 1, 'theory_log_within': -0.015434213350950755, 'coarse': -0.01680006667696476, 'fine': -0.016135549637575127, 'extrap': -0.015471032598185493, 'ratio_to_theory': 1.0023855603390677}
+{'radius_factor': 1.0, 'seed': 2, 'theory_log_within': -0.015434213350950755, 'coarse': -0.01661264492458748, 'fine': -0.014216621391870101, 'extrap': -0.011820597859152723, 'ratio_to_theory': 0.7658697978555913}
+{'radius_factor': 2.0, 'seed': 2, 'theory_log_within': -0.015434213350950755, 'coarse': -0.01492778734289973, 'fine': -0.015502999677823356, 'extrap': -0.016078212012746982, 'ratio_to_theory': 1.0417253958561197}
+{'radius_factor': 4.0, 'seed': 2, 'theory_log_within': -0.015434213350950755, 'coarse': -0.015964398137305102, 'fine': -0.015211454675770465, 'extrap': -0.014458511214235827, 'ratio_to_theory': 0.9367831638368}
+{'radius_factor': 8.0, 'seed': 2, 'theory_log_within': -0.015434213350950755, 'coarse': -0.01690828015966126, 'fine': -0.016028473373088506, 'extrap': -0.01514866658651575, 'ratio_to_theory': 0.9814991047524029}
+ALLDONE
