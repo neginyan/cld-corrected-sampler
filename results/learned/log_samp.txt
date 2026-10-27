@@ -1,0 +1,91 @@
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+B 1 300000 1 20000 paired learned -0.1184 exact -0.1208 delta i/ii/iii 0.0037 0.0014 0.0262 1050 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+B 1 300000 0 20000 paired learned -0.1111 exact -0.1116 delta i/ii/iii 0.0018 0.0013 0.0231 1074 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+B 1 300000 2 20000 paired learned -0.1195 exact -0.1178 delta i/ii/iii 0.0002 0.0019 0.0207 1085 s
+B 2 300000 0 20000 paired learned -0.1137 exact -0.1116 delta i/ii/iii 0.0051 0.0071 0.0320 1064 s
+RESUME Tue Oct 27 08:47:17 JST 2026
+B 2 300000 1 20000 paired learned -0.1195 exact -0.1208 delta i/ii/iii 0.0076 0.0062 0.0369 1099 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+B 2 300000 2 20000 paired learned -0.1198 exact -0.1178 delta i/ii/iii 0.0047 0.0067 0.0214 1102 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 300000 0 20000 paired learned -0.2153 exact -0.2098 delta i/ii/iii 0.0061 0.0116 0.0122 755 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 300000 1 20000 paired learned -0.2128 exact -0.2094 delta i/ii/iii 0.0043 0.0077 0.0140 787 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 300000 2 20000 paired learned -0.2056 exact -0.2016 delta i/ii/iii 0.0059 0.0099 0.0134 700 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 2 300000 0 20000 paired learned -0.2094 exact -0.2098 delta i/ii/iii 0.0065 0.0062 0.0046 710 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+RESUME Tue Oct 27 09:32:22 JST 2026
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 2 300000 2 20000 paired learned -0.2034 exact -0.2016 delta i/ii/iii 0.0033 0.0052 0.0004 1619 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 2 300000 1 20000 paired learned -0.2093 exact -0.2094 delta i/ii/iii 0.0031 0.0030 0.0041 1626 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 1 300000 1 20000 paired learned -0.0185 exact -0.0150 delta i/ii/iii 0.0370 0.0405 42.6649 2116 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 1 300000 0 20000 paired learned -0.0267 exact -0.0210 delta i/ii/iii 0.0330 0.0387 89.8941 2136 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+b1core.py:73: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'ode':   return z @ B.T - 0.5 * s @ G.T
+o_mlp.py:25: RuntimeWarning: invalid value encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 1 300000 2 20000 paired learned -0.0158 exact -0.0205 delta i/ii/iii 0.0432 0.0385 -0.0369 2046 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 2 300000 0 20000 paired learned -0.0224 exact -0.0210 delta i/ii/iii 0.0377 0.0392 19.9388 2048 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 2 300000 1 20000 paired learned -0.0171 exact -0.0150 delta i/ii/iii 0.0372 0.0393 67.5319 2030 s
+D 2 300000 2 20000 paired learned -0.0144 exact -0.0205 delta i/ii/iii 0.0442 0.0381 81.2094 2069 s
+B 1 10000 0 10000 paired learned -0.0939 exact -0.1207 delta i/ii/iii 0.2040 0.1772 2.4617 1016 s
+B 1 40000 0 10000 paired learned -0.1082 exact -0.1207 delta i/ii/iii 0.0702 0.0578 0.5933 1004 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+B 1 100000 0 10000 paired learned -0.1179 exact -0.1207 delta i/ii/iii 0.0269 0.0241 0.1427 971 s
+B 1 300000 0 10000 paired learned -0.1222 exact -0.1207 delta i/ii/iii 0.0016 0.0031 0.0308 960 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 10000 0 10000 paired learned -0.1934 exact -0.2115 delta i/ii/iii 0.2273 0.2091 3.8926 698 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 40000 0 10000 paired learned -0.2114 exact -0.2115 delta i/ii/iii 0.0692 0.0691 0.2542 686 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 100000 0 10000 paired learned -0.2053 exact -0.2115 delta i/ii/iii 0.0415 0.0353 0.0744 711 s
+C 1 300000 0 10000 paired learned -0.2184 exact -0.2115 delta i/ii/iii 0.0056 0.0126 0.0327 713 s
+SAMPDONE

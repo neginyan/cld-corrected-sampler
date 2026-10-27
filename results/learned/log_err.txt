@@ -1,0 +1,24 @@
+B 1 300000 e_near_smin 8.99e-04 max e 4.22e-03
+B 2 300000 e_near_smin 9.04e-04 max e 4.23e-03
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 2 300000 e_near_smin 1.31e-02 max e 5.14e-02
+C 1 300000 e_near_smin 1.09e-02 max e 4.25e-02
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 2 300000 e_near_smin 1.17e-01 max e 4.64e-01
+D 1 300000 e_near_smin 1.18e-01 max e 4.68e-01
+B 1 10000 e_near_smin 1.60e-02 max e 7.13e-02
+B 1 40000 e_near_smin 4.46e-03 max e 2.05e-02
+B 1 100000 e_near_smin 2.79e-03 max e 1.30e-02
+C 1 10000 e_near_smin 1.47e-01 max e 5.70e-01
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+C 1 40000 e_near_smin 4.74e-02 max e 1.85e-01
+C 1 100000 e_near_smin 3.04e-02 max e 1.19e-01
