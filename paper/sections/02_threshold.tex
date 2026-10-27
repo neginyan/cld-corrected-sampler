@@ -1,0 +1,58 @@
+\section{Threshold and corrected sampler}
+\label{sec:threshold}
+
+\paragraph*{Flow.}
+Per data coordinate, the CLD forward drift is $Bz$ with $z=(x,v)$ and
+\begin{equation}
+B=\beta\begin{pmatrix}0 & M^{-1}\\ -1 & -\Gamma M^{-1}\end{pmatrix},\qquad \Gamma^2=4M ,
+\label{eq:B}
+\end{equation}
+where the second relation is critical damping~\cite{dockhorn2022cld}.
+The defaults of the official code ($\beta=4$, $M^{-1}=4$, $\Gamma=1$, initial velocity variance $\gamma M=0.01$) give $\Sym B$ the eigenvalues $2, -18$.
+The flow therefore stretches the direction $u$ (the top eigenvector of $\Sym B$) at the rate $\kappa=2$, and contracts the direction $w$ (the bottom eigenvector, eigenvalue $w_{\min}=-18$).
+
+\paragraph*{Isotropic schedule.}
+The forward law is $Z_t=e^{Bt}Z_0+\sigma(t)\varepsilon$ with $\sigma(t)=\smin e^{rt}$, $t\in[0,T]$ and $\sigma(T)=\smax$.
+Its covariance satisfies $\dot C=BC+CB^{\top}+G$ with
+\begin{equation}
+G=2\sigma^2\,(rI-\Sym B).
+\label{eq:G}
+\end{equation}
+
+\begin{proposition}[Ref.~\cite{namba2026threshold}]
+\label{prop:threshold}
+$G\succeq 0$ if and only if $r\geq\kappa$.
+For $r<\kappa$ the marginals cannot be produced by a linear SDE with drift $Bz$ and state-independent noise, and the Anderson reverse SDE with noise $G$ does not exist.
+\end{proposition}
+
+\paragraph*{Samplers.}
+Let $\Gp$ be $G$ with its negative eigenvalues set to zero, and let $\Gm=\Gp-G\succeq0$.
+We compare three reverse samplers, written as forward-time drift and noise and driven by the same score $s=\nabla\log p_t$:
+\Sa{} the \emph{clipped} SDE, $Bz-\Gp s$ with noise $\sqrt{\Gp}$;
+\Sb{} the \emph{corrected} SDE, $Bz-\tfrac12(G+\Gp)s$ with noise $\sqrt{\Gp}$;
+\Sc{} the \emph{probability-flow ODE}, $Bz-\tfrac12 G s$ with no noise.
+Sampler~\Sb{} belongs to the standard family of reverse SDEs with arbitrary diffusion $D\succeq0$, drift $Bz-\tfrac12(G+D)s$~\cite{song2021sde}, with $D=\Gp$; sampler \Sc{} is the member with $D=0$.
+
+\begin{proposition}[Ref.~\cite{namba2026threshold}]
+\label{prop:exact}
+For every $r$, samplers \Sb{} and \Sc{} reproduce the forward marginals.
+For $r\geq\kappa$, \Sa{} and \Sb{} are the same equation.
+For $r<\kappa$ and Gaussian data, \Sa{} keeps the mean exact and shrinks the covariance.
+\end{proposition}
+
+The statement concerns the marginal law at each time and the exact, continuous-time dynamics; individual trajectories are not reproduced, and the time-step error of the numerical integration is removed by step extrapolation (App.~\ref{app:methods}).
+
+Because \Sa{} and \Sb{} coincide for $r\geq\kappa$, \emph{the threshold sitting exactly at $r=\kappa$ is an identity, not a finding}.
+What the experiments measure is the size of the damage below $\kappa$.
+
+\begin{proposition}
+\label{prop:difference}
+For any score field $\shat$, the drift of \Sb{} minus the drift of \Sa{} is $\tfrac12\Gm\shat$, and their noise is the same.
+Hence a score error $\delta=\shat-s$ enters the two samplers differently only through $\tfrac12\Gm\delta$.
+\end{proposition}
+\begin{proof}
+$\bigl[Bz-\tfrac12(G+\Gp)\shat\bigr]-\bigl[Bz-\Gp\shat\bigr]=\tfrac12(\Gp-G)\shat=\tfrac12\Gm\shat$.
+Both noises are $\sqrt{\Gp}$.
+\end{proof}
+
+On the CLD block, for $0<r<\kappa$ only one eigenvalue of $G$ is negative, so $\Gm=2(\kappa-r)\sigma^2uu^{\top}$: the noise that \Sa{} discards lies along the stretching direction.

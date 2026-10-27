@@ -1,0 +1,20 @@
+\section{Practical guidance and limits}
+\label{sec:discussion}
+
+\paragraph*{Guidance.}
+(1)~On the CLD flow, an isotropic schedule needs $r\geq\kappa$ for the standard clipped reverse SDE.
+Below $\kappa$, use the corrected sampler \Sb{}: it needs no retraining, and it removes the threshold effect with the exact and the learned score alike.
+(2)~Below $\kappa$, the damage is set by $\smin$ relative to the data scale and by the mass $M$, not by $\smax$.
+With $\smin$ well below the data scale and the CLD mass, it stays at a few per cent.
+(3)~With a learned score, prefer the corrected SDE to the probability-flow ODE: the ODE carries score errors instead of forgetting them.
+
+\paragraph*{Limits.}
+The standard CLD, whose noise is given by its SDE, does not meet this threshold.
+In typical settings ($\smin$ below the data scale, setting D) the threshold effect is a few per cent, smaller than the error of a small learned score.
+The large effects (11--19\% in mixtures) require $\smin$ comparable to the data scale or a mass far from the default.
+All data are four-dimensional Gaussian mixtures; images were not attempted, because the map predicts the same conclusion there.
+Three observations remain open: the velocity effect in setting A, the mechanism by which neighbouring modes reduce the shrinkage, and the small ODE-to-SDE ratio for the final networks of setting C.
+
+\begin{conjecture}
+For phase-space samplers whose drift has a skew part, such as the CLD flow, the fragility of the probability-flow ODE with a learned score (Observation~\ref{obs:ode}) is a consequence of Eq.~\eqref{eq:M}, independent of the threshold, wherever the covariance is dominated by the blur.
+\end{conjecture}

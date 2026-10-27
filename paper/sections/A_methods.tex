@@ -1,0 +1,19 @@
+\section{Methods}
+\label{app:methods}
+
+\paragraph*{CLD parameters.}
+The values are taken from the configuration files of the official code (\texttt{nv-tlabs/CLD-SGM}, \texttt{configs/default\_cifar10.txt}): $\beta=4$ (constant), $M^{-1}=4$, $\Gamma=2/\sqrt{M^{-1}}=1$ and $\gamma=0.04$, which gives the initial velocity variance $\gamma M = 0.01$~\cite{dockhorn2022cld}.
+When $M$ is varied (Sec.~\ref{sec:map}) we keep $\Gamma=2\sqrt M$ and choose $\beta$ so that $\kappa=2$; at fixed $r/\kappa$, $\beta$ does not affect the result.
+
+\paragraph*{Integration.}
+The SDEs are integrated with Euler--Maruyama and the ODE with Heun's method~\cite{kloeden1992numerical}, on a uniform grid from $T$ to $0$.
+In Secs.~\ref{sec:exact} and \ref{sec:map}, two step sizes ($h\approx0.002$ and $0.001$) share one Brownian path and are combined as $2x(h/2)-x(h)$.
+In a study with step sizes from $0.008$ down to $0.0005$, the paired quantities changed by a few per cent between $h=0.002$ and the extrapolated value.
+In Sec.~\ref{sec:learned} a single step $h\approx0.002$ is used, and the discretization error cancels in $\Delta$ because the exact-score run shares the path.
+The prior is sampled exactly from $p_T$.
+
+\paragraph*{Statistics and pre-registration.}
+Error bars are standard errors over seeds; the threshold fit uses a bootstrap over seeds.
+For the mixture checks, the learned-score study and the score-weighting study, success criteria and tolerances were written down before any results of the corresponding runs were available. One item, which applied an existing proviso to make the mode-weight check of setting B a reference value only, was added a few seconds after the mixture runs were launched, before any of their results existed. The records, with the file times of the working folder, are in the repository.
+Two tolerances of closed-form checks were set after a first look at the values; both are within the pre-registered 5\%.
+Single-mode moment equations are solved with an adaptive eighth-order Runge--Kutta method at relative tolerance $10^{-10}$; tightening it to $10^{-12}$ changes $L$ by less than $10^{-6}$ (relative).

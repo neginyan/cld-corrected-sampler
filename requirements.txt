@@ -1,0 +1,7 @@
+# Versions used for every result in this repository (Python 3.13.17, Linux x86_64, 2 CPU cores, no GPU).
+# No deep-learning framework is used: the score networks are a small NumPy MLP (src/mlp.py).
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+# demo notebook only (preinstalled on Colab):
+ipywidgets

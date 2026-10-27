@@ -1,0 +1,8 @@
+\section*{Data and code availability}
+All code, stored results, trained network weights and verification scripts are available at \url{https://github.com/neginyan/cld-corrected-sampler}.
+Every number in this paper is recomputed from the stored results by a verification script.
+No GPU was used.
+
+\begin{acknowledgments}
+The author used AI assistants in this work. Anthropic Claude (\mbox{claude-opus-5-5}) was used in two separate sessions. In the first session it planned the study and wrote the instructions for each stage, re-ran every verification suite independently, re-derived key results by independent calculations (the curvature $\kappa$ of the CLD flow, the noise-dominated limit $L_\infty$, the difference of the two samplers in Proposition~\ref{prop:difference}, and the generator in Eq.~\eqref{eq:M}), and reviewed the manuscript. In the second session it carried out the computations, derived the error equations, the closed forms and the forgetting rates, trained the score networks, wrote the evaluation and verification code, and drafted the text. Results were passed between the sessions as written summaries and checked in the first session. Google Gemini (Gemini 3.8 Flash) and OpenAI ChatGPT (GPT-5.6 Luna) reviewed a draft of the manuscript: Gemini re-derived the equations and reproduced the closed-form numbers with its own code, and ChatGPT checked the derivations and pointed out statements whose scope or notation needed to be made explicit. The author directed the research, made all decisions on its content, and takes full responsibility for this article.
+\end{acknowledgments}

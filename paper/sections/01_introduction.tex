@@ -1,0 +1,34 @@
+\section{Introduction}
+\label{sec:intro}
+
+Score-based diffusion models generate data by reversing a noising process~\cite{song2021sde,ho2020ddpm}.
+Critically damped Langevin diffusion (CLD)~\cite{dockhorn2022cld} runs this process in phase space: each data coordinate $x$ is paired with a velocity $v$, the pair is driven by a damped oscillator flow, and noise enters through the velocity only.
+\emph{The standard CLD prescribes its noise through its stochastic differential equation (SDE). It therefore never meets the threshold studied in this paper.}
+Our subject is a different design choice: keeping the CLD flow but specifying the noise schedule by its marginals, as an isotropic blur of width $\sigma(t)=\smin e^{rt}$ that grows at a fixed rate $r$.
+
+Why consider such schedules?
+Specifying a schedule by its marginals, as in variance-exploding and EDM-type diffusion models~\cite{song2021sde,karras2022edm}, fixes the noise level $\sigma$ directly; the preconditioning of the network inputs and the choice of time steps can then be taken over from those designs.
+Making the blur isotropic puts positions and velocities on the same scale, so a single $\sigma$ states how much phase-space detail has been blurred away.
+We do not test here whether these conveniences pay off in practice for CLD.
+This paper only establishes what happens to the reverse samplers when such a schedule widens more slowly than the flow stretches.
+
+For such schedules the noise required to produce the marginals is $G=2\sigma^2(rI-\Sym B)$, where $B$ is the flow matrix.
+It is positive semidefinite only if $r\geq\kappa=\lambda_{\max}(\Sym B)$, the fastest stretching rate of the flow~\cite{namba2026threshold}.
+Below $\kappa$, the standard reverse SDE~\cite{anderson1982reverse,haussmann1986time} does not exist.
+Its natural repair, which clips the negative part of $G$, is biased, whereas a corrected sampler and the probability-flow ODE~\cite{song2021sde} stay exact.
+These statements are proved in Ref.~\cite{namba2026threshold}; the threshold itself is the phase-space form of a criterion for the coarse-grained arrow of time~\cite{namba2026arrow}.
+
+This paper asks the practical questions that the proofs leave open, for the actual CLD flow:
+\emph{where} the clipped sampler breaks, \emph{how much}, and whether the corrected sampler still fixes it when the score is \emph{learned}.
+Our answers are as follows.
+The measured threshold sits where the theory puts it (Sec.~\ref{sec:exact}).
+The damage is made at the end of sampling, while the blur is close to $\smin$, and it is large only in specific regions of parameter space (Sec.~\ref{sec:map}).
+With learned scores, the clipped sampler breaks and the corrected sampler fixes it, the score error simply adding to the threshold effect (Sec.~\ref{sec:learned}).
+The probability-flow ODE carries score errors that the corrected SDE forgets (Sec.~\ref{sec:forgetting}).
+In typical settings the effect is a few per cent (Sec.~\ref{sec:discussion}).
+
+Throughout, we mark the status of every statement:
+a \emph{Proposition} is proved;
+a \emph{Derived result} is an exact or asymptotic formula derived here and checked against direct numerical solution;
+an \emph{Observation} is measured in simulations, with seeds and error bars;
+a \emph{Conjecture} has not been tested.

@@ -1,0 +1,9 @@
+Critically damped Langevin diffusion (CLD) generates data in position--velocity phase space.
+\emph{The standard CLD specifies its noise through a stochastic differential equation and never meets the threshold studied here.}
+We combine the CLD flow instead with an isotropic noise schedule specified by its marginals, $\sigma(t)=\smin e^{rt}$.
+A reverse-time SDE with state-independent noise then exists only for $r\geq\kappa$, the largest stretching rate of the flow; below $\kappa$ the standard clipped sampler is biased, while a corrected sampler and the probability-flow ODE stay exact.
+On a four-dimensional Gaussian-mixture test, the measured shrinkage places the threshold at $\kappa_{\rm fit}/\kappa = 0.992 \pm 0.025$.
+An exact error equation shows that the damage is made while the blur is close to $\smin$, does not depend on $\smax$, and exceeds 10\% only when $\smin$ is comparable to the data scale or the CLD mass is far from its default (up to $18.6\%$ in mixtures).
+With learned scores the clipped sampler breaks as with the exact score, and the corrected sampler fixes it without retraining.
+\emph{In typical settings, with $\smin$ below the data scale, the threshold effect is a few per cent, smaller than the error of a small learned score.}
+For a single Gaussian mode in the noise-dominated regime, the probability-flow ODE never damps a score error, it only rotates it, whereas the corrected SDE damps it.
