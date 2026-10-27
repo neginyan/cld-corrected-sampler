@@ -52,6 +52,8 @@ With `--recompute`, 286 checks run: 283 pass and 3 are known failures. The known
 
 No GPU is used. The score networks are a small NumPy MLP.
 
+Retraining the first 10 000 steps of a network reproduces the stored weights bit for bit on the machine that produced them. On other CPUs (for example GitHub's runners) the floating-point arithmetic differs slightly (about 1e-5), so the check then requires a relative difference of at most 1e-3.
+
 ## Reproduce from scratch
 
 `experiments/PIPELINE.md` lists the commands that regenerate every stored result. The full pipeline takes several hours on two CPU cores; training is bit-reproducible on a single thread.
