@@ -1,0 +1,52 @@
+{
+ "setting": "D",
+ "net_seed": 2,
+ "step": 300000,
+ "seed": 2,
+ "N": 20000,
+ "K": 4494,
+ "h": 0.0019998212774058684,
+ "T": 8.987196820661973,
+ "learned": {
+  "fixed": {
+   "L": -Infinity,
+   "L_vel": NaN,
+   "max_weight_dev": 0.875
+  },
+  "naive": {
+   "L": -Infinity,
+   "L_vel": NaN,
+   "max_weight_dev": 0.875
+  },
+  "ode": {
+   "L": -Infinity,
+   "L_vel": NaN,
+   "max_weight_dev": 0.875
+  },
+  "paired": NaN
+ },
+ "exact": {
+  "fixed": {
+   "L": 0.018648099000699254,
+   "L_vel": -0.056388462408503995,
+   "max_weight_dev": 0.0024500000000000077
+  },
+  "naive": {
+   "L": -0.001816541090251544,
+   "L_vel": -0.0921712756094549,
+   "max_weight_dev": 0.003950000000000009
+  },
+  "ode": {
+   "L": -0.0009847215119863496,
+   "L_vel": 0.014008869901551174,
+   "max_weight_dev": 0.004600000000000007
+  },
+  "paired": -0.020464640090950798
+ },
+ "delta": {
+  "naive": -Infinity,
+  "fixed": -Infinity,
+  "ode": -Infinity
+ },
+ "sec": 2323.722888946533
+}

@@ -1,0 +1,73 @@
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+D 1 300000 0 20000 paired learned nan exact -0.0210 delta i/ii/iii -inf -inf -inf 2192 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 1 300000 1 20000 paired learned nan exact -0.0150 delta i/ii/iii -inf -inf -inf 2193 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+o_mlp.py:25: RuntimeWarning: invalid value encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+b1core.py:75: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'naive': return z @ B.T - s @ Gp.T
+b1core.py:73: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'ode':   return z @ B.T - 0.5 * s @ G.T
+D 2 300000 0 20000 paired learned nan exact -0.0210 delta i/ii/iii -inf -inf -inf 2288 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 1 300000 2 20000 paired learned nan exact -0.0205 delta i/ii/iii -inf -inf -inf 2317 s
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:25: RuntimeWarning: overflow encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+o_mlp.py:9: RuntimeWarning: invalid value encountered in multiply
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+sample_b3.py:20: RuntimeWarning: divide by zero encountered in log
+  r[md] = {'L': float(np.log(st['within_var'] / ref['within_var'])), 'L_vel': float(np.log(st['vel_var'] / ref['vel_var'])),
+o_mlp.py:25: RuntimeWarning: invalid value encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+b1core.py:75: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'naive': return z @ B.T - s @ Gp.T
+o_mlp.py:25: RuntimeWarning: invalid value encountered in matmul
+  z = h @ P[2 * i] + P[2 * i + 1]
+b1core.py:75: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'naive': return z @ B.T - s @ Gp.T
+b1core.py:73: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'ode':   return z @ B.T - 0.5 * s @ G.T
+b1core.py:73: RuntimeWarning: invalid value encountered in matmul
+  if mode == 'ode':   return z @ B.T - 0.5 * s @ G.T
+D 2 300000 2 20000 paired learned nan exact -0.0205 delta i/ii/iii -inf -inf -inf 2324 s
+D 2 300000 1 20000 paired learned nan exact -0.0150 delta i/ii/iii -inf -inf -inf 2366 s
+SAMPDONE

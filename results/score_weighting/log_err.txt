@@ -1,0 +1,6 @@
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+o_mlp.py:9: RuntimeWarning: overflow encountered in exp
+  sg = 1 / (1 + np.exp(-z)); return z * sg, sg * (1 + z * (1 - sg))           # value, derivative
+D 2 300000 e_near_smin 1.11e-01 max e 8.83e+00
+D 1 300000 e_near_smin 1.01e-01 max e 3.03e+00
